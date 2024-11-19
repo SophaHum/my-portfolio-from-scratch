@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sopha HUM</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Load Motion One before other scripts -->
+    <script src="https://unpkg.com/@motion-one/dom@latest/dist/motion-one-dom.min.js"></script>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- DevIcon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <!-- Simple Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/"/>
+    <!-- Alternative Icon CDNs -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <!-- <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script> -->
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Sopha HUM</div>
+        <div class="hamburger" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                        <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Hello, my name is<br>
+                    <span class="name">HUM Sopha</span>
+                </h1>
+                <p class="hero-description">
+                    I am a software engineer currently based in<br>
+                    Phnom Penh, City.
+                </p>
+                <div class="role-badge">
+                    <i class="fas fa-code"></i>
+                    Software Engineer
+                </div>
+            </div>
+            <div class="hero-image">
+                <img 
+                    src="https://raw.githubusercontent.com/SophaHum/portfolio/d02b45d07aad5564e5990b055d3c1cd7c4ff66c8/public/assets/home_one.jpg?token=GHSAT0AAAAAACZZOV6ZSIBOORC2WTLSKDS6ZZ5C73Q" 
+                    alt="Profile photo" 
+                    class="profile-image"
+                    loading="lazy"
+                >
+            </div>
+        </div>
+    </section>
+    <section id="tech-stack">
+        <h2>Tech Stack</h2>
+        
+        <div class="stack-section">
+            <h3>Front End</h3>
+            <div class="tech-icons">
+                <i class="devicon-html5-plain colored" title="HTML5"></i>
+                <i class="devicon-css3-plain colored" title="CSS3"></i>
+                <i class="devicon-tailwindcss-plain colored" title="Tailwind"></i>
+                <i class="devicon-javascript-plain colored" title="JavaScript"></i>
+                <i class="devicon-typescript-plain colored" title="TypeScript"></i>
+                <i class="devicon-astro-plain colored" title="Astro"></i>
+                <i class="devicon-react-original colored" title="React"></i>
+                <i class="devicon-vuejs-plain colored" title="Vue.js"></i>
+            </div>
+        </div>
+
+        <div class="stack-section">
+            <h3>Back End</h3>
+            <div class="tech-icons">
+                <i class="devicon-php-plain colored" title="PHP"></i>
+                <i class="devicon-nodejs-plain colored" title="Node.js"></i>
+                <i class="devicon-java-plain colored" title="Java"></i>
+                <i class="devicon-go-original-wordmark colored" title="Go"></i>
+                <i class="devicon-mysql-plain colored" title="MySQL"></i>
+                <i class="devicon-postgresql-plain colored" title="PostgreSQL"></i>
+                <i class="devicon-mongodb-plain colored" title="MongoDB"></i>
+            </div>
+        </div>
+
+        <div class="stack-section">
+            <h3>Tools & Platforms</h3>
+            <div class="tech-icons">
+                <i class="devicon-github-original colored" title="GitHub"></i>
+                <i class="devicon-git-plain colored" title="Git"></i>
+                <i class="devicon-vscode-plain colored" title="VS Code"></i>
+                <i class="devicon-docker-plain colored" title="Docker"></i>
+                <i class="devicon-amazonwebservices-original colored" title="AWS"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="work">
+        <h2>Featured Projects</h2>
+        <div id="projects-root"></div>
+    </section>
+
+    <section id="about">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <div class="about-description">
+                <p>I'm a Software Engineer with over 3 years of professional experience at Peth Yoeung Co., Ltd. I've progressed from intern to Web Developer, demonstrating strong leadership and technical skills.</p>
+                
+                <p>My expertise includes developing and maintaining web applications, optimizing code for performance, and implementing new features. I have a proven track record of successfully integrating complex systems, such as API payments with banks, and mentoring junior developers.</p>
+                
+                <p>I'm committed to delivering high-quality, efficient, and user-friendly web solutions in fast-paced environments. I'm passionate about exploring new technologies and applying them to solve real-world problems, as evidenced by my diverse portfolio of personal projects.</p>
+
+                <div class="skills-section">
+                    <h3>Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>Front-end</h4>
+                            <p>Tailwind CSS, JavaScript ES6, React JS, Next JS, Vue JS, Astro JS, Livewire</p>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Back-end</h4>
+                            <p>Node.js, PHP (Laravel framework, Filament PHP), Docker, PostgreSQL</p>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Version control</h4>
+                            <p>GitLab, GitHub</p>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Cloud</h4>
+                            <p>AWS, Vercel</p>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Other</h4>
+                            <p>Strong problem-solving skills, Scrum methodology, excellent communication</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Get in Touch</h2>
+        
+        <div class="contact-container">
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <div class="info-items">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>#St 8BT, Somkosal II, Boeng Tumpun, Mean Cheay, Phnom Penh</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>(+855) 15607950</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:sopha.humm@gmail.com">sopha.humm@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="connect-section">
+                    <h3>Connect with me</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/SophaHum" target="_blank" rel="noopener noreferrer">
+                            <i class="devicon-github-original"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sopha-hum-b288a419a/" target="_blank" rel="noopener noreferrer">
+                            <i class="devicon-linkedin-plain"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h3>Send a Message</h3>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="your.email@example.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Your message here..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="copyright">© 2024 HUM Sopha. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/SophaHum" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   aria-label="GitHub Profile"
+                   title="GitHub">
+                    <i class="devicon-github-original"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sopha-hum-b288a419a/" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   aria-label="LinkedIn Profile"
+                   title="LinkedIn">
+                    <i class="devicon-linkedin-plain"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/babel" src="script.js"></script>
+</body>
+</html>
