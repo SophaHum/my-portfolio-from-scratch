@@ -1,5 +1,28 @@
+
+document.addEventListener('DOMContentLoaded', () => {
+    const animateText = document.querySelectorAll('.animate-text');
+    
+    animateText.forEach((element, index) => {
+        element.style.opacity = '0';
+        element.style.transform = 'translateY(20px)';
+        
+        setTimeout(() => {
+            motion.animate(element, {
+                opacity: 1,
+                transform: 'translateY(0px)'
+            }, {
+                duration: 0.8,
+                delay: index * 0.2,
+                easing: 'ease-out'
+            });
+        }, 100);
+    });
+});
+
 // Wait for Motion One to be available
 const initializeAnimations = () => {
+    
+
     if (!window.motionOne) {
         setTimeout(initializeAnimations, 100);
         return;

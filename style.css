@@ -1,6 +1,6 @@
 :root {
     --bg-color: rgba(255, 255, 255, 0.1);
-    --text-color: #2d1f3d;
+    --text-color: #000000;
     --nav-bg: rgba(255, 255, 255, 0.2);
     --card-bg: rgba(255, 255, 255, 0.3);
     --shadow: rgba(0, 0, 0, 0.1);
@@ -11,6 +11,7 @@
     transition: all 0.3s ease;
     --bg-light: url('https://raw.githubusercontent.com/SophaHum/portfolio/main/public/assets/backgrounds/bg-light.jpg');
     --bg-dark: url('https://raw.githubusercontent.com/SophaHum/portfolio/main/public/assets/backgrounds/bg-dark.jpg');
+    --text-primary: #000000;
 }
 
 * {
@@ -96,6 +97,14 @@ nav a {
 
 nav a:hover {
     color: var(--secondary);
+}
+.hero-description{
+    color: white !important;
+    opacity: 0.9;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
 }
 
 section {
@@ -256,6 +265,7 @@ button:hover {
     --nav-bg: rgba(0, 0, 0, 0.3);
     --card-bg: rgba(0, 0, 0, 0.4);
     --shadow: rgba(0, 0, 0, 0.5);
+    --text-primary: #ffffff;
 }
 
 body.dark-mode {
@@ -557,8 +567,8 @@ body.dark-mode {
         #1a1a2e 50%,
         #0f0f1a 100%
     );
-    --text-color-light: #2d1f3d;
-    --text-color-dark: #ffffff;
+    --text-primary-light: #000000;
+    --text-primary-dark: #ffffff;
     --nav-bg-light: rgba(255, 255, 255, 0.2);
     --nav-bg-dark: rgba(0, 0, 0, 0.2);
 }
@@ -566,7 +576,7 @@ body.dark-mode {
 /* Base styles */
 body {
     background: var(--bg-light);
-    color: var(--text-color-light);
+    color: var(--text-primary-light);
     transition: all 0.3s ease;
 }
 
@@ -586,7 +596,6 @@ body.dark-mode {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s ease;
     position: relative;
     width: 40px;
     height: 40px;
@@ -1380,20 +1389,44 @@ body.dark-mode .form-group textarea {
 /* Enhanced text styles */
 .hero-title {
     font-size: 3.5rem;
-    line-height: 1.2;
+    line-height: 1.3;
     margin-bottom: 1.5rem;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+/* Gradient text for "Hello, my name is" */
+.animate-text {
+    background: linear-gradient(to right, #2193b0, #6dd5ed); /* Light blue to cyan gradient */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+/* For dark mode, you might want a different gradient */
+.dark-mode .animate-text {
+    background: linear-gradient(to right, #00b4db, #0083b0); /* Brighter blue gradient for dark mode */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Keep your existing name gradient */
 .name {
     font-weight: 700;
-    background: linear-gradient(to right, #9c27b0, #673ab7);
+    background: linear-gradient(to right, #6b1b9a, #4a148c);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
     display: inline-block;
+}
+
+/* Dark mode name gradient */
+.dark-mode .name {
+    background: linear-gradient(to right, #9c27b0, #673ab7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Add underline effect to name */
