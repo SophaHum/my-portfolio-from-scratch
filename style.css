@@ -1535,31 +1535,3 @@ body.dark-mode .form-group textarea {
         transform: rotateY(-5deg) translateY(0);
     }
 }
-
-/* Add this to ensure white text in light mode */
-p {
-    color: white !important;
-}
-
-.about-description p {
-    color: white !important;
-}
-
-.info-item p, 
-.info-item a {
-    color: white !important;
-}
-
-.project-card p {
-    color: white !important;
-}
-
-/* Ensure form labels and inputs remain readable */
-.form-group label {
-    color: white !important;
-}
-
-.form-group input,
-.form-group textarea {
-    color: white !important;
-}
