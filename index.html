@@ -22,36 +22,34 @@
 <body>
     <nav class="navbar">
         <div class="logo">Sopha HUM</div>
-        <div class="hamburger" id="hamburger-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="nav-menu" id="nav-menu">
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li>
-                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-                        <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="5"></circle>
-                            <line x1="12" y1="1" x2="12" y2="3"></line>
-                            <line x1="12" y1="21" x2="12" y2="23"></line>
-                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                            <line x1="1" y1="12" x2="3" y2="12"></line>
-                            <line x1="21" y1="12" x2="23" y2="12"></line>
-                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                        </svg>
-                        <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                        </svg>
-                    </button>
-                </li>
-            </ul>
+        <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="theme-toggle-wrapper">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
     </nav>
 
@@ -72,17 +70,17 @@
                 </div>
             </div>
             <div class="hero-image">
-                <!-- <img 
-                    src="https://raw.githubusercontent.com/SophaHum/portfolio/refs/heads/main/public/assets/home_one.jpg?token=GHSAT0AAAAAACZZOV6ZHTUPPW67YZ63ZESIZZ5EGCA" 
+                 <img 
+                    src="/../assets/sopha.JPG" 
                     alt="Profile photo" 
                     class="profile-image"
                     loading="lazy"
-                > -->
+                > 
             </div>
         </div>
     </section>
     <section id="tech-stack">
-        <h2>Tech Stack</h2>
+        <h2 class="section-title">Tech Stack</h2>
         
         <div class="stack-section">
             <h3>Front End</h3>
@@ -124,19 +122,19 @@
     </section>
 
     <section id="work">
-        <h2>Featured Projects</h2>
+        <h2 class="section-title">Featured Projects</h2>
         <div id="projects-root"></div>
     </section>
 
     <section id="about">
         <div class="about-content">
-            <h2>About Me</h2>
+            <h2 class="section-title">About Me</h2>
             <div class="about-description">
-                <p>I'm a Software Engineer with over 3 years of professional experience at Peth Yoeung Co., Ltd. I've progressed from intern to Web Developer, demonstrating strong leadership and technical skills.</p>
+                <p>As a seasoned Software Engineer with 4+ years of experience at Peth Yoeung Co., Ltd., I've successfully evolved from an intern to a Web Developer, showcasing both technical excellence and leadership capabilities.</p>
                 
-                <p>My expertise includes developing and maintaining web applications, optimizing code for performance, and implementing new features. I have a proven track record of successfully integrating complex systems, such as API payments with banks, and mentoring junior developers.</p>
+                <p>Throughout my career, I've specialized in full-stack web development, focusing on building scalable applications and optimizing system performance. My notable achievements include successfully implementing secure payment integrations with major banking institutions and architecting robust web solutions that drive business growth.</p>
                 
-                <p>I'm committed to delivering high-quality, efficient, and user-friendly web solutions in fast-paced environments. I'm passionate about exploring new technologies and applying them to solve real-world problems, as evidenced by my diverse portfolio of personal projects.</p>
+                <p>I excel in collaborative environments where I can leverage my expertise in mentoring junior developers while delivering innovative solutions. My strong foundation in software engineering principles, combined with a passion for emerging technologies, enables me to create efficient, maintainable, and user-centric applications that solve complex business challenges.</p>
 
                 <div class="skills-section">
                     <h3>Skills</h3>
@@ -173,7 +171,7 @@
         <div class="contact-container">
             <!-- Contact Information -->
             <div class="contact-info">
-                <h3>Contact Information</h3>
+                <h3 class="info-title">Contact Information</h3>
                 <div class="info-items">
                     <div class="info-item">
                         <i class="fas fa-map-marker-alt"></i>
@@ -190,7 +188,7 @@
                 </div>
 
                 <div class="connect-section">
-                    <h3>Connect with me</h3>
+                    <h3 class="connect-title">Connect with me</h3>
                     <div class="social-links">
                         <a href="https://github.com/SophaHum" target="_blank" rel="noopener noreferrer">
                             <i class="devicon-github-original"></i>
@@ -204,7 +202,7 @@
 
             <!-- Contact Form -->
             <div class="contact-form">
-                <h3>Send a Message</h3>
+                <h3 class="form-title">Send a Message</h3>
                 <form id="contact-form">
                     <div class="form-group">
                         <label for="name">Name</label>
@@ -229,7 +227,7 @@
 
     <footer class="footer">
         <div class="footer-content">
-            <p class="copyright">© 2024 HUM Sopha. All rights reserved.</p>
+            <p class="copyright"> 2024 HUM Sopha. All rights reserved.</p>
             <div class="social-links">
                 <a href="https://github.com/SophaHum" 
                    target="_blank" 

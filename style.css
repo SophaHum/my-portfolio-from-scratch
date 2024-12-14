@@ -68,20 +68,6 @@ nav {
     transition: background-color 0.3s ease;
 }
 
-.logo {
-    display: inline-block;
-    font-size: 48px;
-    line-height: 1;
-    font-weight: 900;
-    background: linear-gradient(to top left, #F7941E, #72C6EF, #00A651);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    text-transform: uppercase;
-    padding: 0.2em 0;
-}
-
 nav ul {
     display: flex;
     gap: 2rem;
@@ -175,11 +161,37 @@ section {
     transition: background-color 0.3s ease, transform 0.3s ease;
     cursor: pointer;
     background-color: var(--card-bg);
-    box-shadow: 0 4px 6px var(--shadow);
 }
 
 .project-card:hover {
     transform: translateY(-5px);
+}
+.info-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    background-image: linear-gradient(270deg, #990aff 0%, #e90774 0%, #00bd16 56%, #ab00fa 99%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 5s ease infinite;
+}
+.form-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    background-image: linear-gradient(270deg, #990aff 0%, #e90774 0%, #00bd16 56%, #ab00fa 99%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 5s ease infinite;
+}
+.connect-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    background-image: linear-gradient(270deg, #990aff 0%, #e90774 0%, #00bd16 56%, #ab00fa 99%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 5s ease infinite;
 }
 
 .projects-grid {
@@ -496,7 +508,7 @@ body.dark-mode {
 .project-card h3 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    background-image: linear-gradient(270deg, #990aff 0%, #e90774 0%, #00bd16 56%, #ab00fa 99%);
+    background-image: linear-gradient(270deg, #e90774 0%, #1283e0 40%, #ab00fa 99%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -646,17 +658,28 @@ body.dark-mode nav {
 
 /* Logo gradient text styles */
 .logo {
-    display: inline-block;
-    font-size: 48px;
-    line-height: 1;
-    font-weight: 900;
-    background: linear-gradient(to top left, #F7941E, #72C6EF, #00A651);
+    
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
     background-clip: text;
+    text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: transparent;
-    text-transform: uppercase;
-    padding: 0.2em 0;
+    animation: textclip 4s linear infinite;
+    display: inline-block;
+    font-size: 30pt;
+    line-height: 1;
+    font-weight: 900;
 }
 
 /* Responsive logo size */
@@ -764,7 +787,13 @@ body.dark-mode section {
         right: -100%;
         width: 100%;
         height: 100vh;
-        background: var(--nav-bg);
+        background-image: linear-gradient(
+            135deg,
+            #453f40 0%,
+            #4721cf 50%,
+            #6b1b9a 100%
+        );
+        opacity: 1;
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         display: flex;
@@ -1393,13 +1422,33 @@ body.dark-mode .form-group textarea {
     margin-bottom: 1.5rem;
 }
 
-/* Gradient text for "Hello, my name is" */
+/* Gradient text for */
 .animate-text {
-    background: linear-gradient(to right, #2193b0, #6dd5ed); /* Light blue to cyan gradient */
-    -webkit-background-clip: text;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #3508d8 0%,
+      #a06fd5 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
     background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    /* animation: textclip 5s linear infinite; */
     display: inline-block;
+    font-size: 40px;
+  }
+  
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
 }
 
 /* For dark mode, you might want a different gradient */
@@ -1410,10 +1459,11 @@ body.dark-mode .form-group textarea {
     -webkit-text-fill-color: transparent;
 }
 
+
 /* Keep your existing name gradient */
 .name {
     font-weight: 700;
-    background: linear-gradient(to right, #6b1b9a, #4a148c);
+    background: linear-gradient(to right, #f008af, #0d06e1);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1423,7 +1473,7 @@ body.dark-mode .form-group textarea {
 
 /* Dark mode name gradient */
 .dark-mode .name {
-    background: linear-gradient(to right, #9c27b0, #673ab7);
+    background: linear-gradient(to right, #c909eb, #3804d1);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
