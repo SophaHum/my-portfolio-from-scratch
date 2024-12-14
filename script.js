@@ -262,3 +262,9 @@ document.head.insertAdjacentHTML('beforeend', `
         }
     </style>
 `);
+
+// Redirect url to cv template
+document.getElementById('cv-link').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.open('https://sopha-hum-curriculum-vitae.vercel.app/', '_blank');
+});
